@@ -21,6 +21,8 @@ tornado = "*"
 aiofiles = "*"
 aiologger = "*"
 django-cors-headers = "*"
+gunicorn = "*"
+mysqlclient = "*"
 
 [dev-packages]
 
