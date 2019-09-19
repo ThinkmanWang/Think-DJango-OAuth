@@ -39,17 +39,25 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'console',
     'oauth2_provider',
-    'rest_framework',
+    # 'rest_framework',
 ]
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
-        # 'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+    'DEFAULT_AUTHENTICATION_CLASSES': ('oauth2_provider.contrib.rest_framework.OAuth2Authentication',),
 }
+
+OAUTH2_PROVIDER = {
+    # this is the list of available scopes
+    'SCOPES': {'read': 'Read scope', 'write': 'Write scope', 'groups': 'Access to your groups'},
+    'ACCESS_TOKEN_EXPIRE_SECONDS': 31536000,
+}
+
+# AUTHENTICATION_BACKENDS = [
+#     'oauth2_provider.backends.OAuth2Backend',
+#     'django.contrib.auth.backends.ModelBackend' # Only if you want to use admin
+# ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

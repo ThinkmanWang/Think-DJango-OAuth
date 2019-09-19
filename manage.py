@@ -4,8 +4,8 @@ import os
 import sys
 
 '''
-curl -X POST -d "grant_type=password&username=root&password=Ab123145" -u"9AQhtuuEh1bcbQ2HRmTumL8DX9UM8xGYZqZL5xOB:T1G7vtOLkJCyYNtsEzjFqaLm6n2LuvYGP823lmQlgMWtQk9kRudoilsOavQ1JUDxWFGYLUR9a6ZOX7MokI2taluLxz0BQHWzrFiCe9DAFtW2pIkxKijax1hscITIoXmP" http://localhost:8000/o/token/
-curl -H "Authorization: Bearer ESRNnksyKXs1jNXy7KJMMLz4qFV3OC" http://localhost:8000/api/hello
+curl -X POST -d "grant_type=password&username=root&password=Ab123145" -u"xylTl8sQQIjhTvcPgLx5oKeV52HvBdKgqYAEUgRC:C26vMbUReltXnDwOLUA9Vr8POR9PjDdAzo8jndDcbEP10UM4bF3DdeGwBW3t7vdWlhWaQW5b1ctMN5IfKn43Vobl15b8w0ZgBW97oAdMZH3IQwA7jNpmBvF76QYi5zfG" http://localhost:8000/o/token/
+curl -H "Authorization: Bearer HxW4UUDaq6Hibafrs5aPNVk4uUpPR7" http://localhost:8000/api/hello
 '''
 
 def main():
