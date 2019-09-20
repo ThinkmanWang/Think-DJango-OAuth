@@ -25,7 +25,7 @@ class ApiFxxk(ProtectedResourceView):
     def get(self, request, *args, **kwargs):
         return HttpResponse(obj2json(RetModel(data="Hello, OAuth2!")))
 
-# @method_decorator(csrf_exempt)
+@method_decorator(csrf_exempt, name='dispatch')
 class ApiFxxkPlus(ProtectedResourceView):
     def get(self, request, *args, **kwargs):
         return HttpResponse(obj2json(RetModel(data="GET FXXK, OAuth2!")))
